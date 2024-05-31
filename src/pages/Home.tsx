@@ -11,7 +11,7 @@ const fetchAll = async (): Promise<Country[]> => {
 }
 
 export default function Home() {
-  const query = useQuery({ queryKey: ['countries'], queryFn: fetchAll })
+  const query = useQuery({ queryKey: ['countries'], queryFn: fetchAll });
 
   return (
     <>
